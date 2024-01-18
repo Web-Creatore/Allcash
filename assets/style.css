@@ -11810,14 +11810,19 @@ line-height: 22px; /* 157.143% */
 }
 .container {
     width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     /* border: 1px solid black; */
 }
 
 .banner-img {
-    position: absolute;
-    height: 400px;
+    /* position: absolute; */
+    /* height: 400px; */
     width: 600px;
-    right: 0;
+    object-fit: contain;
+    bottom: -100px;
+    /* right: 0; */
 }
 
 .container-fluid.home {
@@ -11825,9 +11830,6 @@ line-height: 22px; /* 157.143% */
     background-image: var(--feature-img);
     padding-top: 110px;
     padding-bottom: 120px;
-
-
-
 }
 
 .banner-btn {
@@ -11843,6 +11845,9 @@ line-height: 22px; /* 157.143% */
     line-height: normal;
     letter-spacing: -0.072px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-header {
