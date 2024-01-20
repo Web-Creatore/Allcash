@@ -1,21 +1,156 @@
-@font-face {
-    font-family: 'Pretendard Variable';
-    src: url('PretendardVariable-Regular.eot');
-    src: url('PretendardVariable-Regular.eot?#iefix') format('embedded-opentype'),
-        url('PretendardVariable-Regular.woff2') format('woff2'),
-        url('PretendardVariable-Regular.woff') format('woff'),
-        url('PretendardVariable-Regular.svg#PretendardVariable-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+figure {
+  font-family: "Noto Sans KR";
+  margin: 0;
+  padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+iframe {
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  font-family: "Noto Sans KR";
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    width: 130px;
+}
+
+.navbar-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 10;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0px 10px 20px rgba(50, 40, 102, 0.08);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    height: 100%;
+}
+
+.menu > a {
+    line-height: 80px;
+
+    color: #212121;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.072px;
+}
+
+.menu-join {
+    display: flex;
+    gap: 28px;
+}
+
+.menu-join>a {
+    color: #212121;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: -0.064px;
+    margin: 0px;
+}
+
+.menu>p {
+    color: #212121;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.072px;
+    margin: 0px;
+}
+
+.menubar-height {
+    width: 100%;
+    height: 80px;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1180px;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+.wrapper.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+}
 
 body {
     position: relative;
     overflow-x: hidden;
     margin: 0px;
-
 }
 
 .footer-logo {
@@ -23,11 +158,12 @@ body {
     height: 27px;
     flex-shrink: 0;
 }
+
 .footer-menu{
     width:80%;
 }
 
-.container-fluid.footer {
+.cont.footer {
     background: #272C30;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -55,61 +191,7 @@ body {
     margin-bottom: 12px;
 }
 
-.nav-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0px;
-    align-items: center;
-    width: 1180px;
-}
-
-.menu {
-    display: flex;
-    gap: 50px;
-}
-
-.menu-sec {
-    display: flex;
-    gap: 28px;
-}
-
-.menu-sec>p {
-    color: #212121;
-    font-family: "Noto Sans KR";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 125% */
-    letter-spacing: -0.064px;
-    margin: 0px;
-}
-
-.menu>p {
-    color: #212121;
-    font-family: "Noto Sans KR";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 133.333% */
-    letter-spacing: -0.072px;
-    margin: 0px;
-}
-
-.logo {
-    width: 130px;
-    height: 27px;
-    flex-shrink: 0;
-}
-
-.container-fluid {
+.cont {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -126,28 +208,22 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    /* 157.143% */
 }
 
 .container {
     max-width: 1180px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    /* border: 1px solid black; */
 }
 
 .banner-img {
-    /* position: absolute; */
-    /* height: 400px; */
-    width: 600px;
-    object-fit: contain;
-    bottom: -100px;
-    /* right: 0; */
+    width: 70%;
+    object-fit: cover;
 }
+
 .row-1{
     border: 1px solid #EBEBEB;
-background: #FFF;
+    background: #FFF;
 }
 .row-2{
     border-left: 1px solid #EBEBEB;
@@ -156,17 +232,12 @@ background: #FFF;
 
 .container-new.footer-container{
     width: 1180px;
-    gap:71px;
+    /* gap:71px; */
+    gap: 170px;
 }
 
-.container-fluid.home {
+.cont.home {
     background-color: #CDE9FF;
-    background-image: var(--feature-img);
-
-    padding-bottom: 120px;
-    background-position: bottom -145px right 20px;
-    background-repeat: no-repeat;
-    background-size: 56%;
 }
 
 .banner-btn {
@@ -194,13 +265,9 @@ background: #FFF;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
-    /* 76.8px */
-    letter-spacing: -0.192px;
-    margin-bottom: 73px;
-    margin-top: 120px;
 }
 
-.container-fluid.second {
+.cont.second {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +275,7 @@ background: #FFF;
     padding: 60px 0px;
 }
 
-.container-fluid.second>div {
+.cont.second>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -546,8 +613,8 @@ letter-spacing: -0.056px;
 }
 .tick{
     width: 60px;
-height: 60px;
-margin-bottom: 16px;
+    height: 60px;
+    margin-bottom: 16px;
 
 }
 .dailogue-box {
@@ -570,20 +637,20 @@ margin-bottom: 16px;
     .menu{
         display: none;
     }
-    .menu-sec{
+    .menu-join{
         display: none;
     }
     .container.home{
        justify-content: center;
     }
-    .container-fluid.second>div{
+    .cont.second>div{
         flex-direction: column;
     }
     .footer-container{
         flex-direction: column;
     }
-    .container-fluid.home{
-        background-image: none;
+    .cont.home{
+        /* background-image: none; */
     }
     .footer-menu{
         width:100%;
