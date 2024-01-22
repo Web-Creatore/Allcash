@@ -4,9 +4,13 @@ var formSec = document.getElementById("form-sec");
 var nav = document.getElementById("nav");
 var footer = document.getElementById("footer");
 var dialogueBox = document.getElementById("dial-cont");
+var mobNavBtn=document.getElementById("mob-nv-btn");
+var mainbBody=document.getElementById("main-body");
+var mobileNav=document.getElementById("mob-nav");
+var mobNavClose = document.getElementById("mob-nav-close");
 // var tableSec=document.querySelectorAll(".table-section");
-clickbtn.addEventListener("click", myfunction);
 
+if(clickbtn){clickbtn.addEventListener("click", myfunction);}
 function myfunction() {
 
 
@@ -23,8 +27,10 @@ function myfunction() {
     // dialogueBox.style.position="absolute"
 
 }
+
+
 var closebtn = document.getElementById("close");
-closebtn.addEventListener("click", close);
+if(closebtn){closebtn.addEventListener("click", close);}
 
 function close() {
 
@@ -40,4 +46,16 @@ function close() {
 
     // dialogueBox.style.position="absolute"
 
+}
+if(mobNavBtn){
+mobNavBtn.addEventListener("click", openmobNav);
+}
+function openmobNav(){ 
+    mainbBody.style.display="none";
+    mobileNav.style.display="block";
+}
+if(mobNavClose){mobNavClose.addEventListener("click", closemobnav);}
+function closemobnav(){
+    mainbBody.style.display="block";
+    mobileNav.style.display="none";
 }

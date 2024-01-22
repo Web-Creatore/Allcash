@@ -10,7 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar-cont">
+    <div id="mob-nav">
+        <div style="text-align:right;padding: 20px;"><img src="./assets/images/close.png" id="mob-nav-close"/></div>
+        <div class="mob-menu">
+            <a href="./allcashcharge.html">
+                        <p>생활편의서비스</p>
+                    </a>
+                    <a href="#">
+                        <p>MENU2</p>
+                    </a>
+                    <a href="#">
+                        <p>MENU3</p>
+                    </a>
+                    <a href="#">
+                        <p>MENU4</p>
+                    </a>
+        </div>
+    </div>
+    <div id="main-body">
+    <div class="navbar-cont" id="nav">
         <navbar class="navbar-wrap">
             <a href="./home.html"><img src="./assets/images/logo.png" class="logo" /></a>
             <div class="menu">
@@ -23,11 +41,14 @@
                 <a href="#"><p>회원가입</p></a>
                 <a href="#"><p>로그인</p></a>
             </div>
+            <div class="moblile-nav-btn">
+                <img src="./assets/images/mob-nav-btn.png" class="mob-nav-btn" id="mob-nv-btn"/>
+            </div>
         </navbar>
     </div>
     <div class="menubar-height"> </div>
     <div class="conatiner-fluid form-section" id="form-sec">
-        <div class="new-container form-sec">
+        <div class="container form-sec">
             <h2 class="form-heading">올캐쉬 충전</h2>
             <h5 class="form-subheading">올패스 상품권 뒷면의 일련번호와 비밀번호를 입력하여 올캐쉬를 충전해주세요.</h5>
      
@@ -51,7 +72,7 @@
 
     <div class="cont table-section" id="table-sec">
      
-        <div class="new-container table-sec">
+        <div class="container table-sec">
             <h2 class="table-heading">올캐쉬 이용 리스트</h2>
 
             <div class="bd-example">
@@ -102,7 +123,8 @@
         </div>
 
     </div>
-    <div id="dial-cont">
+    
+       <div id="dial-cont">
         <div class="dailogue-box">
            <img src="./assets/images/tick.png" class="tick"/>
         <h1>올캐시 충전 완료</h1>
@@ -111,22 +133,27 @@
         <button id="close">확인</button>
         </div>
     </div>
-    <footer class="cont footer" id="footer">
-        <div class="container-new footer-container" style="display:flex;">
-            <div><img class="footer-logo" src="./assets/images/footer.png" /></div>
-            <div class="footer-menu" style="width:80%;">
+    <footer class="container-fluid footer" style="background: #272C30;" id="footer">
+        <div class="container" >
+            <div class="footer-container">
+            <div class="footer-logo-cont"><img class="footer-logo" src="./assets/images/footer.png" /></div>
+            <div class="footer-menu" >
                 <p class="contact us">Contact us</p>
                 <p>email@gmail.com</p>
                 <p>02-2345-6789</p>
                 <p>123 Seoul</p>
             </div>
+        </div>
 
         </div>
-        <div class="container-copyright">
-            <p class="copyright">Copyright © 2020. All rights reserved.</p>
-        </div>
+        
     </footer>
-   
+    <div class="container-fluid" style="background: #272C30;">
+    <div class="container">
+        <p class="copyright">Copyright © 2020. All rights reserved.</p>
+    </div>
+    </div>
+</div>
     <script src="./assets/custom.js">
     </script>
 </body>
