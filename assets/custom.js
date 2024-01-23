@@ -15,6 +15,7 @@ var paraOne=document.getElementById("fst-conetnt");
 var paraTwo=document.getElementById("snd-conetnt");
 var paraThree=document.getElementById("th-conetnt");
 var parafour=document.getElementById("fr-conetnt");
+// var menubarheight=document.getElementById("menubarheight");
 // var tableSec=document.querySelectorAll(".table-section");
 
 if(clickbtn){clickbtn.addEventListener("click", myfunction);}
@@ -25,6 +26,7 @@ function myfunction() {
     formSec.style.display = "none";
     nav.style.display = "none";
     footer.style.display = "none";
+    // menubarheight.style.display="none";
 
    
     // var body=document.getElementsByTagName("body")[0];
@@ -33,6 +35,7 @@ function myfunction() {
     parafour.style.display="none"
     paraTwo.style.display="none"
     paraThree.style.display="none"
+    // menubarheight.style.display="block";
 
 
     // dialogueBox.style.position="absolute"
@@ -46,6 +49,8 @@ function myfunctiontwo() {
     formSec.style.display = "none";
     nav.style.display = "none";
     footer.style.display = "none";
+    // menubarheight.style.display="none";
+
 
 
     // var body=document.getElementsByTagName("body")[0];
@@ -54,6 +59,7 @@ function myfunctiontwo() {
     paraOne.style.display="none"
     parafour.style.display="none"
     paraThree.style.display="none"
+    // menubarheight.style.display="block";
 
 
     // dialogueBox.style.position="absolute"
@@ -67,6 +73,8 @@ function myfunctionthree() {
     formSec.style.display = "none";
     nav.style.display = "none";
     footer.style.display = "none";
+    // menubarheight.style.display="none";
+
 
 
     // var body=document.getElementsByTagName("body")[0];
@@ -75,6 +83,7 @@ function myfunctionthree() {
     paraOne.style.display="none"
     paraTwo.style.display="none"
     parafour.style.display="none"
+    // menubarheight.style.display="block";
 
 
     // dialogueBox.style.position="absolute"
@@ -88,6 +97,8 @@ function myfunctionfour() {
     formSec.style.display = "none";
     nav.style.display = "none";
     footer.style.display = "none";
+    // menubarheight.style.display="none";
+
 
 
     // var body=document.getElementsByTagName("body")[0];
@@ -96,6 +107,7 @@ function myfunctionfour() {
     paraOne.style.display="none"
     paraTwo.style.display="none"
     paraThree.style.display="none"
+    // menubarheight.style.display="block";
 
 
     // dialogueBox.style.position="absolute"
