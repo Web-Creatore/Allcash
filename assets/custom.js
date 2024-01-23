@@ -82,10 +82,12 @@ function myfunctionfour() {
 
 }
 
-
+var allcashgiftAltClose=document.getElementById("allcashgift-alt-close");
+var allcashgiftclose=document.getElementById("allcashgiftclose");
 var closebtn = document.getElementById("close");
 if(closebtn){closebtn.addEventListener("click", close);}
-
+if(allcashgiftclose){allcashgiftclose.addEventListener("click", close);}
+if(allcashgiftAltClose){allcashgiftAltClose.addEventListener("click", close);}
 function close() {
 
 

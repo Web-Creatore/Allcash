@@ -769,6 +769,9 @@ div#form-sec{
 }
 
 @media (max-width:768px) {
+    .wc-table{
+        padding: 0px 20px;
+    }
     .form-heading{
         font-size:20px;
     }
