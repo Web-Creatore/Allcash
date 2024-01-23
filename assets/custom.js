@@ -11,6 +11,10 @@ var mobNavBtn=document.getElementById("mob-nv-btn");
 var mainbBody=document.getElementById("main-body");
 var mobileNav=document.getElementById("mob-nav");
 var mobNavClose = document.getElementById("mob-nav-close");
+var paraOne=document.getElementById("fst-conetnt");
+var paraTwo=document.getElementById("snd-conetnt");
+var paraThree=document.getElementById("th-conetnt");
+var parafour=document.getElementById("fr-conetnt");
 // var tableSec=document.querySelectorAll(".table-section");
 
 if(clickbtn){clickbtn.addEventListener("click", myfunction);}
@@ -22,9 +26,13 @@ function myfunction() {
     nav.style.display = "none";
     footer.style.display = "none";
 
-
+   
     // var body=document.getElementsByTagName("body")[0];
-    dialogueBox.style.display = "flex"
+    dialogueBox.style.display = "flex";
+    paraOne.style.display="block";
+    parafour.style.display="none"
+    paraTwo.style.display="none"
+    paraThree.style.display="none"
 
 
     // dialogueBox.style.position="absolute"
@@ -42,6 +50,10 @@ function myfunctiontwo() {
 
     // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
+    paraTwo.style.display="block"
+    paraOne.style.display="none"
+    parafour.style.display="none"
+    paraThree.style.display="none"
 
 
     // dialogueBox.style.position="absolute"
@@ -59,6 +71,10 @@ function myfunctionthree() {
 
     // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
+    paraThree.style.display="block"
+    paraOne.style.display="none"
+    paraTwo.style.display="none"
+    parafour.style.display="none"
 
 
     // dialogueBox.style.position="absolute"
@@ -76,6 +92,10 @@ function myfunctionfour() {
 
     // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
+    parafour.style.display="block"
+    paraOne.style.display="none"
+    paraTwo.style.display="none"
+    paraThree.style.display="none"
 
 
     // dialogueBox.style.position="absolute"
