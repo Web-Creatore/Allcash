@@ -800,10 +800,9 @@ td {
     justify-content: center;
 }
 
-.container.product {
-   
-}
-.prod-sec{
+.container.product {}
+
+.prod-sec {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -833,24 +832,27 @@ td {
     background-position: center;
     margin-bottom: 14px;
 }
-.product-overlay{
+
+.product-overlay {
     border-radius: 20px;
     opacity: 0.25;
     width: 220px;
     height: 220px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%), radial-gradient(52.47% 52.47% at 50% 50%, rgba(255, 255, 255, 0.00) 56.74%, rgba(0, 0, 0, 0.30) 98.85%), url(<path-to-image>), lightgray -11.359px -68.357px / 110.326% 141.319% no-repeat;
 }
-.prod-title{
+
+.prod-title {
     color: var(--Black, #212121);
-font-family: Pretendard Variable;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.32px;
-margin-bottom: ;
+    font-family: Pretendard Variable;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    margin-bottom: ;
 }
-.disc{
+
+.disc {
     color: #969696;
     font-family: Pretendard Variable;
     font-size: 25px;
@@ -860,54 +862,464 @@ margin-bottom: ;
     letter-spacing: -0.5px;
     text-decoration: line-through;
 }
-.actual{
+
+.actual {
     color: #000;
-    font-family:Pretendard Variable;
+    font-family: Pretendard Variable;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.5px;
 }
-.percent{
+
+.percent {
     color: #CF0000;
-font-family: Pretendard Variable;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -0.5px;
+    font-family: Pretendard Variable;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
 }
-.prod-sub{
+
+.prod-sub {
     color: var(--Black, #212121);
-font-family:Pretendard Variable;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%; /* 24px */
-letter-spacing: -0.4px;
-margin-top: 5px;
-margin-bottom: 16px;
+    font-family: Pretendard Variable;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 24px */
+    letter-spacing: -0.4px;
+    margin-top: 5px;
+    margin-bottom: 16px;
 }
-.tab{
+
+.tab {
     display: none;
 }
+
 /* product design end */
+
+/* advertise start */
+.advertise {
+    display: flex;
+    justify-content: center;
+    background: #F2F2F2;
+}
+
+.ad-sec-1 {
+    width: 50%;
+}
+
+.ad-sec-2 {
+    width: 50%;
+}
+
+.ad-copy {
+    color: var(--Black, var(--Black, #212121));
+    font-family: "Noto Sans KR";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 76.8px */
+    letter-spacing: -0.192px;
+    margin-top: 270px;
+    margin-bottom: 567px;
+}
+
+/* advertise end */
+
+/* customer start */
+.customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.customer-img {
+    width: 1014px;
+    height: 560px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    margin-top: 100px;
+    margin-bottom: 167px;
+}
+
+.customer-heading {
+    color: #212121;
+    font-family: "Noto Sans KR";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.096px;
+    margin-bottom: 8px;
+    margin-top: 100px;
+}
+
+.customer-subheading {
+    color: #555;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.064px;
+}
+
+/* customer end */
+
+/* login start */
+.login {
+    display: flex;
+    justify-content: center;
+    background: #F2F2F2;
+}
+
+.login-input-div.first {
+    margin-bottom: 22px;
+}
+
+
+
+.login-div {
+    width: 547px;
+
+    border-radius: 20px;
+    background: #FFF;
+
+    padding: 60px;
+    align-items: center;
+    /* 그림자 */
+    box-shadow: 0px 10px 32px -4px rgba(24, 39, 75, 0.10), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
+    margin: 3rem 0rem;
+}
+
+.login-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-input-div>label {
+    color: #44444C;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.login-input-div>input {
+    border-radius: 6px;
+    border: 1px solid var(--G1, #D6D6D6);
+    background: var(--W, #FFF);
+
+    height: 64px;
+    padding: 0px 24px;
+    flex-shrink: 0;
+    color: var(--G2, #8C8C8C);
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+}
+
+.login-submit {
+    color: var(--W, #FFF);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 6px;
+    background: var(--G4, #0B0909);
+    display: flex;
+    width: 100%;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 40px 0px;
+}
+
+.login-input-div>input::placeholder {
+    color: #8C8C8C;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.login-footnote {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.middle-para {
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+
+}
+
+.login-footnote>a>p {
+    color: #606060;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 8px;
+}
+
+.login-heading {
+    color: #0B0909;
+    font-family: "Noto Sans KR";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+
+/* login end */
+
+/* my page start */
+.mypage {
+    display: flex;
+
+}
+
+.form-heading {
+    color: #002666;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px;
+}
+
+.mypage-heading {
+    color: var(--Black, var(--Black, #212121));
+    font-family: "Noto Sans KR";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.096px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.mypage-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mypage-label {
+    color: #8C8C8C;
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mypage-input-field {
+    color: var(--G4, #0B0909);
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    fill: var(--W, #FFF);
+    filter: drop-shadow(0px 1px 0px #D6D6D6);
+    border: none;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.mypage-input-field::placeholder {
+    color: var(--G4, #0B0909);
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.input-container.last {
+    margin-bottom: 28px;
+}
+
+.mypage-sec-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 50%;
+}
+
+.input-div {
+    padding: 10px;
+}
+
+.input-btn {
+    color: var(--G3, #44444C);
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 100% */
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid var(--G3, #44444C);
+    display: inline-flex;
+    padding: 6px 8px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-input-div {
+    display: flex;
+    gap: 10px;
+    /* filter: drop-shadow(0px 1px 0px #D6D6D6); */
+    height: 51.4px;
+    align-items: center;
+    border-bottom: 1px solid #D6D6D6;
+    justify-content: space-between;
+
+}
+
+.mypage-sec {
+    background: #F2F2F2;
+}
+
+.gap {
+    padding: 50px;
+    background-color: white;
+    margin-bottom: 190px;
+}
+
+.mypage-btn-input {
+    width: 321px;
+    border: none;
+    height: 48px;
+    color: var(--G4, #0B0909);
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* filter: drop-shadow(0px 1px 0px #D6D6D6); */
+}
+
+.mypage-btn-input::placeholder {
+    color: var(--G4, #0B0909);
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mypage-sec-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 50%;
+}
+
+/* my page end */
+
 /* reponsive design start */
 /* reponsive design start */
 @media (max-width:1180px) {
+    .ad-copy {
+        margin-top: 167px;
+        margin-bottom: 367px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
+
+    .customer-img {
+        width: 100%;
+        height: 472px;
+        flex-shrink: 0;
+        margin-top: 78px;
+        margin-bottom: 128px;
+    }
+
     .container-fluid.home {
         background-position: bottom 0px right -138px;
     }
-.pcandmob{
-    display: none;
-}
+
+    .container.img {
+        text-align: center;
+    }
+
+    .input-container {
+        margin-bottom: 20px;
+    }
+
+    .gap {
+        width: 600px;
+        padding: 65px 42px 51px 53px;
+    }
+
+    .mypage {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .mypage-sec-2 {
+        width: 100%;
+    }
+
+    .mypage-sec-1 {
+        width: 100%;
+    }
+
+    .pcandmob {
+        display: none;
+    }
+
     .table-heading {
         padding: 0px 40px;
     }
-.tab{
-    display: block;
-}
+
+    .tab {
+        display: block;
+    }
+
     .footer-container {
         display: flex;
         gap: 190px;
@@ -946,7 +1358,222 @@ margin-bottom: 16px;
 }
 
 @media (max-width:768px) {
-    .prod-sec{
+    .login-heading {
+        color: #0B0909;
+        font-family: "Noto Sans KR";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.18px;
+    }
+
+    .login-input-div.first {
+        margin-bottom: 14px;
+    }
+
+
+    .login-input-div>label {
+        color: #44444C;
+        font-family: "Noto Sans KR";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        /* 133.333% */
+    }
+
+    .login-footnote>a>p {
+        color: #606060;
+        font-family: "Noto Sans KR";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .login-input-div>input {
+        display: flex;
+
+        height: 44px;
+        padding: 10px 16px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 6px;
+        border: 1px solid #D6D6D6;
+        background: #FFF;
+        color: var(--G2, #8C8C8C);
+        font-family: "Noto Sans KR";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 184.615% */
+    }
+
+    .login-input-div>input::placeholder {
+        color: var(--G2, #8C8C8C);
+        font-family: "Noto Sans KR";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 184.615% */
+    }
+
+    .login-submit {
+        color: #FFF;
+        text-align: center;
+        font-family: "Noto Sans KR";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .login-div {
+        width: 100%;
+        border-radius: 6px;
+        background: #FFF;
+        padding: 32px 20px;
+    }
+
+    .login {
+        padding: 0px 20px;
+    }
+
+    .advertise {
+        flex-direction: column;
+    }
+
+    .customer-heading {
+        color: #212121;
+        font-family: "Noto Sans KR";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.08px;
+        margin-top: 60px;
+    }
+
+    .customer-subheading {
+        color: #555;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.064px;
+    }
+
+    .customer-img {
+        margin-top: 53px;
+        margin-bottom: 153px;
+        border-radius: 20px;
+        width: 316px;
+        height: 174px;
+    }
+
+    .customer-div {
+        padding: 0px 20px;
+    }
+
+    .ad-sec-2 {
+        width: 100%;
+    }
+
+    .ad-copy {
+        margin-top: 400px;
+        margin-bottom: 109px;
+        text-align: center;
+        color: var(--Black, var(--Black, #212121));
+        text-align: center;
+        font-family: "Noto Sans KR";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        /* 51.2px */
+        letter-spacing: -0.128px;
+    }
+
+    .input-container {
+        margin-bottom: 14px;
+    }
+
+    .mypage-heading {
+        color: var(--Black, var(--Black, #212121));
+        font-family: "Noto Sans KR";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.08px;
+    }
+
+    .mypage {
+        gap: 35px;
+    }
+
+    .form-heading {
+        color: #002666;
+        font-family: "Noto Sans KR";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 171.429% */
+        letter-spacing: -0.14px;
+        padding: 0px 10px;
+    }
+
+    .mypage-label {
+        font-size: 12px;
+    }
+
+    .mypage-input-field {
+        font-size: 13px;
+    }
+
+    .mypage-input-field::placeholder {
+        font-size: 13px;
+
+    }
+
+    .mypage-btn-input {
+        font-size: 13px;
+    }
+
+    .mypage-btn-input::placeholder {
+        font-size: 13px;
+    }
+
+    .gap {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .mypage-heading {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 0px 20px;
+    }
+
+    .input-btn {
+        color: var(--P3, #002666);
+        text-align: center;
+        font-family: "Noto Sans KR";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 78px;
+    }
+
+    .prod-sec {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -954,12 +1581,15 @@ margin-bottom: 16px;
         gap: 50px;
         margin-bottom: 0px;
     }
+
     .cont.second>div {
         padding: 40px 32px;
     }
-    .pcandmob{
+
+    .pcandmob {
         display: block;
     }
+
     .wrapper.home {
         padding: 20px;
     }
