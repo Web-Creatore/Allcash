@@ -247,7 +247,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* .container {
@@ -299,7 +299,8 @@ body {
 .container-fluid.footer {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding: 50px 0;
+    margin-top: auto;
 }
 
 .banner-img {
@@ -490,6 +491,7 @@ body {
     flex-shrink: 0;
 
 }
+/* 1 */
 
 .field.last::placeholder {
     color: #646464;
@@ -607,7 +609,6 @@ td {
 
 .pagination-nav {
     border-radius: 4px;
-
     background: white;
     display: flex;
     width: 32px;
@@ -619,11 +620,13 @@ td {
     border-radius: 4px;
     border: 1px solid #DFE3E8;
     background: #FFF;
+    cursor: pointer;
 }
 
 .pagination-nav.active {
     background: #919EAB;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .number {
@@ -644,12 +647,14 @@ td {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    cursor: pointer;
     /* 142.857% */
 }
 
 .number.active {
     color: #4A85EE;
     border: 1px solid #4A85EE;
+    cursor: pointer;
 }
 
 #dial-cont {
@@ -842,7 +847,6 @@ td {
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.32px;
-    margin-bottom: ;
 }
 
 .disc {
@@ -977,8 +981,6 @@ td {
     margin-bottom: 22px;
 }
 
-
-
 .login-div {
     width: 547px;
 
@@ -989,7 +991,7 @@ td {
     align-items: center;
     /* 그림자 */
     box-shadow: 0px 10px 32px -4px rgba(24, 39, 75, 0.10), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
-    margin: 3rem 0rem;
+    margin: 4rem 0rem;
 }
 
 .login-input-div {
@@ -1077,7 +1079,7 @@ td {
 .login-heading {
     color: #0B0909;
     font-family: "Noto Sans KR";
-    font-size: 28px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1253,6 +1255,9 @@ td {
 /* reponsive design start */
 /* reponsive design start */
 @media (max-width:1180px) {
+    .banner-header {
+        font-size: 32px;
+    }
     .menu>a {
         font-size: 16px;
     }
@@ -1314,7 +1319,7 @@ td {
     }
 
     .table-heading {
-        padding: 0px 40px;
+        /* padding: 0px 40px; */
     }
 
     .tab {
@@ -1359,6 +1364,13 @@ td {
 }
 
 @media (max-width:768px) {
+    .banner-img {
+        display: none;
+    }
+    .banner-text {
+        width: 100%;
+        gap: 20px;
+    }
     .login-heading {
         color: #0B0909;
         font-family: "Noto Sans KR";
@@ -1442,7 +1454,7 @@ td {
     }
 
     .login {
-        padding: 0px 20px;
+        /* padding: 0px 20px; */
     }
 
     .advertise {
@@ -1640,7 +1652,7 @@ td {
     }
 
     .table-heading {
-        padding: 0px 20px;
+        /* padding: 0px 20px; */
     }
 
     .btn-submit {
@@ -1706,11 +1718,6 @@ td {
         text-align: center;
     }
 
-    .banner-header {
-        margin-top: 70px;
-        margin-bottom: 59px;
-    }
-
     /* .menubar-height {
         width: 100%;
         height: 80px;
@@ -1734,14 +1741,15 @@ td {
     }
 
     .banner-header {
+        margin-top: 70px;
+        margin-bottom: 59px;
         color: #212121;
         text-align: center;
         font-family: "Noto Sans KR";
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
-        line-height: 160%;
-        /* 51.2px */
+        line-height: 120%;
         letter-spacing: -0.128px;
     }
 
@@ -1811,7 +1819,7 @@ td {
 
     .copyright {
         display: none;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .banner-btn {
@@ -1822,4 +1830,14 @@ td {
 .menubar-height {
     width: 100%;
     height: 80px;
+}
+
+#main-body {
+}
+
+#main-body.login {
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
