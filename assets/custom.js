@@ -18,29 +18,15 @@ var parafour=document.getElementById("fr-conetnt");
 // var menubarheight=document.getElementById("menubarheight");
 // var tableSec=document.querySelectorAll(".table-section");
 
-if(clickbtn){clickbtn.addEventListener("click", myfunction);}
+if(clickbtn){clickbtn.addEventListener("click", myfunction)}
 function myfunction() {
-
-
-    tableSec.style.display = "none";
-    formSec.style.display = "none";
-    nav.style.display = "none";
-    footer.style.display = "none";
-    // menubarheight.style.display="none";
-
-   
-    // var body=document.getElementsByTagName("body")[0];
+    // tableSec.style.display = "none";
+    // formSec.style.display = "none";
+    // nav.style.display = "none";
+    // footer.style.display = "none";
     dialogueBox.style.display = "flex";
-    paraOne.style.display="block";
-    parafour.style.display="none"
-    paraTwo.style.display="none"
-    paraThree.style.display="none"
-    // menubarheight.style.display="block";
-
-
-    // dialogueBox.style.position="absolute"
-
 }
+
 if(clickbtntwo){clickbtntwo.addEventListener("click", myfunctiontwo);}
 function myfunctiontwo() {
 
@@ -121,28 +107,24 @@ if(closebtn){closebtn.addEventListener("click", close);}
 if(allcashgiftclose){allcashgiftclose.addEventListener("click", close);}
 if(allcashgiftAltClose){allcashgiftAltClose.addEventListener("click", close);}
 function close() {
-
-
     tableSec.style.display = "flex";
     formSec.style.display = "flex";
     nav.style.display = "flex";
     footer.style.display = "flex";
-
-
     dialogueBox.style.display = "none"
-
-
     // dialogueBox.style.position="absolute"
-
 }
+
 if(mobNavBtn){
 mobNavBtn.addEventListener("click", openmobNav);
 }
+
 function openmobNav(){ 
     mainbBody.style.display="none";
     mobileNav.style.display="block";
     tableSec.style.display="none";
 }
+
 if(mobNavClose){mobNavClose.addEventListener("click", closemobnav);}
 function closemobnav(){
     mainbBody.style.display="block";
