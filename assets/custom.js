@@ -1,4 +1,5 @@
 var clickbtn = document.getElementById("open-dial-btn");
+var clickbtnone= document.getElementById("open-dial-btn-one");
 var clickbtntwo= document.getElementById("open-dial-btn-two");
 var clickbtnthree= document.getElementById("open-dial-btn-three");
 var clickbtnfour= document.getElementById("open-dial-btn-four");
@@ -11,6 +12,7 @@ var mobNavBtn=document.getElementById("mob-nv-btn");
 var mainbBody=document.getElementById("main-body");
 var mobileNav=document.getElementById("mob-nav");
 var mobNavClose = document.getElementById("mob-nav-close");
+var paraZero=document.getElementById("zero-conetnt");
 var paraOne=document.getElementById("fst-conetnt");
 var paraTwo=document.getElementById("snd-conetnt");
 var paraThree=document.getElementById("th-conetnt");
@@ -20,84 +22,57 @@ var parafour=document.getElementById("fr-conetnt");
 
 if(clickbtn){clickbtn.addEventListener("click", myfunction)}
 function myfunction() {
-    // tableSec.style.display = "none";
-    // formSec.style.display = "none";
-    // nav.style.display = "none";
-    // footer.style.display = "none";
     dialogueBox.style.display = "flex";
+}
+
+if(clickbtnone){clickbtnone.addEventListener("click", myfunctionzero);}
+function myfunctionzero() {
+    dialogueBox.style.display = "flex"
+    paraZero.style.display="block"
+    paraOne.style.display="none"
+    paraTwo.style.display="none"
+    paraThree.style.display="none"
+    parafour.style.display="none"
+}
+
+if(clickbtnone){clickbtnone.addEventListener("click", myfunctionone);}
+function myfunctionone() {
+    dialogueBox.style.display = "flex"
+    paraZero.style.display="none"
+    paraOne.style.display="block"
+    paraTwo.style.display="none"
+    parafour.style.display="none"
+    paraThree.style.display="none"
 }
 
 if(clickbtntwo){clickbtntwo.addEventListener("click", myfunctiontwo);}
 function myfunctiontwo() {
-
-
-    tableSec.style.display = "none";
-    formSec.style.display = "none";
-    nav.style.display = "none";
-    footer.style.display = "none";
-    // menubarheight.style.display="none";
-
-
-
-    // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
-    paraTwo.style.display="block"
+    paraZero.style.display="none"
     paraOne.style.display="none"
-    parafour.style.display="none"
+    paraTwo.style.display="block"
     paraThree.style.display="none"
-    // menubarheight.style.display="block";
-
-
-    // dialogueBox.style.position="absolute"
-
+    parafour.style.display="none"
 }
+
 if(clickbtnthree){clickbtnthree.addEventListener("click", myfunctionthree);}
 function myfunctionthree() {
-
-
-    tableSec.style.display = "none";
-    formSec.style.display = "none";
-    nav.style.display = "none";
-    footer.style.display = "none";
-    // menubarheight.style.display="none";
-
-
-
-    // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
-    paraThree.style.display="block"
+    paraZero.style.display="none"
     paraOne.style.display="none"
     paraTwo.style.display="none"
+    paraThree.style.display="block"
     parafour.style.display="none"
-    // menubarheight.style.display="block";
-
-
-    // dialogueBox.style.position="absolute"
-
 }
+
 if(clickbtnfour){clickbtnfour.addEventListener("click", myfunctionfour);}
 function myfunctionfour() {
-
-
-    tableSec.style.display = "none";
-    formSec.style.display = "none";
-    nav.style.display = "none";
-    footer.style.display = "none";
-    // menubarheight.style.display="none";
-
-
-
-    // var body=document.getElementsByTagName("body")[0];
     dialogueBox.style.display = "flex"
-    parafour.style.display="block"
+    paraZero.style.display="none"
     paraOne.style.display="none"
     paraTwo.style.display="none"
     paraThree.style.display="none"
-    // menubarheight.style.display="block";
-
-
-    // dialogueBox.style.position="absolute"
-
+    parafour.style.display="block"
 }
 
 var allcashgiftAltClose=document.getElementById("allcashgift-alt-close");
