@@ -145,27 +145,30 @@
             </navbar>
         </div>
     <div class="menubar-height"> </div>
-    <div class="conatiner-fluid form-section" id="form-sec">
-        <div class="container form-sec">
-            <h2 class="table-heading">송금 서비스</h2>
-            <h5 class="form-subheading">올캐쉬를 나의 은행계좌로 출금할 수 있습니다.</h5>
-     
-        <div>
-            <div class="row-1">
-                <div class="label">받는사람 휴대폰 번호</div>
-                <input class="field" type="text"/>
-            </div>
-            <div class="row-2">
-                <div class="label">선물하는 올캐쉬</div>
-                <input class="field small" type="text"/>
-                <button class="btn-submit" id="open-dial-btn">충전</button>
-            </div>
-            <div class="row-1">
-                <div class="label">나의 올캐쉬(P)</div>
-                <input class="field last" type="text" placeholder="58,000"/>
+        <div class="conatiner-fluid form-section" id="form-sec">
+            <div class="container form-sec">
+                <h2 class="table-heading">송금 서비스</h2>
+                <h5 class="form-subheading">올캐쉬를 나의 은행계좌로 출금할 수 있습니다.</h5>
+            <div>
+                <div class="row-1">
+                    <div class="label">은행</div>
+                    <input class="field" type="text"/>
+                </div>
+                <div class="row-1">
+                    <div class="label">계좌번호</div>
+                    <input class="field" type="text"/>
+                </div>
+                <div class="row-2">
+                    <div class="label">송금액</div>
+                    <input class="field small" type="text"/>
+                    <button class="btn-submit" id="open-dial-btn">충전</button>
+                </div>
+                <div class="row-1">
+                    <div class="label">나의 올캐쉬(P)</div>
+                    <input class="field last" type="text" placeholder="58,000"/>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="cont table-section" id="table-sec">
@@ -234,62 +237,68 @@
 
     </div>
     
-       <div id="dial-cont">
+    <div id="dial-cont">
         <div class="dailogue-box">
            <img src="./assets/images/tick.png" class="tick"/>
-        <h1>송금 서비스 본인 계좌 </br> 등록/수정 하기</h1>
-        <div class="row-1">
-            <div class="dial-label">
-                <p>성명</p>
-            </div>
-            <input class="dial-field" type="text" />
-        </div>
-        <div class="row-1">
-            <div class="dial-label">
-                <p>은행</p>
-            </div>
-            <input class="dial-field" type="text" />
-        </div>
-        <div class="row-1">
-            <div class="dial-label">
-                <p>계좌번호</p>
-            </div>
-            <input class="dial-field" type="text" />
-        </div>
-        <div class="row-1">
-            <div class="dial-label">
-                <p>문자인증</p>
-            </div>
-            <input class="dial-field" type="text" />
-        </div>
-        <h5>올패스 상품권 100,000원을 사용하여<br/> 100,000 올캐쉬가 충전되었습니다.</h5>
-                <div>
-                    <button id="allcashgiftclose">확인</button>
-                    <button id="allcashgift-alt-close">취소</button>
+            <h1>송금 서비스 본인 계좌 </br> 등록/수정 하기</h1>
+            <div class="row-1">
+                <div class="dial-label">
+                    <p>성명</p>
                 </div>
+                <input class="dial-field" type="text" />
             </div>
-            </div>
-            <footer class="container-fluid footer" style="background: #272C30;" id="footer">
-                <div class="container" >
-                    <div class="footer-container">
-                    <div class="footer-logo-cont"><img class="footer-logo" src="./assets/images/footer.png" /></div>
-                    <div class="footer-menu" >
-                        <p class="contact us">Contact us</p>
-                        <p>email@gmail.com</p>
-                        <p>02-2345-6789</p>
-                        <p>123 Seoul</p>
-                    </div>
+            <div class="row-1">
+                <div class="dial-label">
+                    <p>은행</p>
                 </div>
+                <input class="dial-field" type="text" />
+            </div>
+            <div class="row-1">
+                <div class="dial-label">
+                    <p>계좌번호</p>
+                </div>
+                <input class="dial-field" type="text" />
+            </div>
+            <div class="row-1">
+                <div class="dial-label">
+                    <p>문자인증</p>
+                </div>
+                <input class="dial-field" type="text" />
+            </div>
+            <div class="row-1">
+                <div class="dial-label">
+                    <p>계좌번호<br />입력</p>
+                </div>
+                <input class="dial-field" type="text" />
+            </div>
+            <p class="charge-message">올패스 상품권 100,000원을 사용하여<br/> 100,000 올캐쉬가 충전되었습니다.</p>
+            <div>
+                <button id="allcashgiftclose">확인</button>
+                <button id="allcashgift-alt-close">취소</button>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid footer" style="background: #272C30;" id="footer">
+        <div class="container" >
+            <div class="footer-container">
+            <div class="footer-logo-cont"><img class="footer-logo" src="./assets/images/footer.png" /></div>
+            <div class="footer-menu" >
+                <p class="contact us">Contact us</p>
+                <p>email@gmail.com</p>
+                <p>02-2345-6789</p>
+                <p>123 Seoul</p>
+            </div>
+        </div>
 
-                </div>
-                
-            </footer>
-            <div class="container-fluid" style="background: #272C30;display: flex;justify-content: center;">
-            <div class="container">
-                <p class="copyright">Copyright © 2020. All rights reserved.</p>
-            </div>
-            </div>
         </div>
-        <script src="./assets/custom.js"> </script>
+        
+    </footer>
+    <div class="container-fluid" style="background: #272C30;display: flex;justify-content: center;">
+        <div class="container">
+            <p class="copyright">Copyright © 2020. All rights reserved.</p>
+        </div>
+        </div>
+    </div>
+    <script src="./assets/custom.js"> </script>
     </body>
 </html>

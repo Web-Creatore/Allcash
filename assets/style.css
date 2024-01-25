@@ -1233,6 +1233,8 @@ td {
     padding: 50px;
     background-color: white;
     margin-bottom: 190px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .mypage-btn-input {
@@ -1310,7 +1312,6 @@ td {
     }
 
     .gap {
-        width: 600px;
         padding: 65px 42px 51px 53px;
     }
 
@@ -1579,7 +1580,6 @@ td {
     }
 
     .gap {
-        width: 350px;
         padding: 20px;
     }
 
@@ -1854,4 +1854,10 @@ td {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.charge-message {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #767676;
 }
